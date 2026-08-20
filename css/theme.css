@@ -524,18 +524,17 @@ img.publications-thumb {
 }
 
 img.carousel-image {
+	display: block;
 	width: 100%;
-	height: 65vh;
-	max-height: 800px;
-	object-fit: cover;
-	object-position: center;
+	height: auto;
+	max-height: none;
 }
 
-@media screen and (max-width: 767px) {
-	img.carousel-image {
-		height: auto;
-		max-height: none;
-	}
+#main-carousel .carousel-caption {
+	position: static;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0;
 }
 
 li.publication {
