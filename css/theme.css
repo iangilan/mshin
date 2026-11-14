@@ -460,6 +460,40 @@ body>.navbar .brand:hover {
 	opacity: .4;
 }
 
+.language-switcher {
+	display: flex;
+	justify-content: flex-end;
+	gap: 6px;
+	margin-bottom: 10px;
+}
+
+.language-switcher button {
+	min-width: 48px;
+	min-height: 36px;
+	padding: 6px 12px;
+	border: 1px solid #647782;
+	border-radius: 4px;
+	background: #fff;
+	color: #30393c;
+	font: inherit;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.language-switcher button:hover {
+	background: #edf3f6;
+}
+
+.language-switcher button[aria-pressed="true"] {
+	background: #30393c;
+	color: #fff;
+}
+
+.language-switcher button:focus-visible {
+	outline: 3px solid #0088cc;
+	outline-offset: 3px;
+}
+
 .lead {
 	margin-bottom: 0px;
 	font-size: 21px;
